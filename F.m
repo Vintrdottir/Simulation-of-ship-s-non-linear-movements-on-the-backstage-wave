@@ -10,6 +10,6 @@ function xp=F(t,x)
   
   w0=sqrt(k1*D/I);
   
-  xp=zeros(2,1); % since output must be a column vector
+  xp=zeros(2,1); 
   xp(1)=x(2);
   xp(2)=-1/I*(D1+D12*(x(1))^2)*x(2)-D2/I*x(2)*abs(x(2))-D/I*(k1*x(1)+k3*(x(1))^3+k5*(x(1))^5)-240/I*cos(0.92*w0*t);
