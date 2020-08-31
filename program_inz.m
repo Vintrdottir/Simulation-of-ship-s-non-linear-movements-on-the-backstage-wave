@@ -38,7 +38,7 @@ function program_inz
   x240=linspace(0.6362,0.8788,2e1);
   ww243=polyval(a1,x240);
   
- %aproksymacja ew=200
+ %approximation ew=200
  
   p1 = 273.17
   p2 = -785.1
@@ -130,7 +130,7 @@ function program_inz
   xlabel('\omega/\omega_o')
   ylabel('a [rad]')
   title('Resonance curve for increasing heeling moment amplitudes')
-  legend('Ew = 240 tm','Ew = 200 tm','Ew = 160 tm','Ew = 120 tm','Ew = 80 tm','Ew = 40 tm', 'maks. amplituda') 
+  legend('Ew = 240 tm','Ew = 200 tm','Ew = 160 tm','Ew = 120 tm','Ew = 80 tm','Ew = 40 tm', 'max. amplitude') 
 
   figure(4)
   hold on
