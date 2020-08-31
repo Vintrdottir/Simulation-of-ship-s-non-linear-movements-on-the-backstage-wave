@@ -53,7 +53,7 @@ function program_inz
   x200=linspace(0.51,0.81,1e1);
   ww200x=f1(x200) 
   
-   %aproksymacja ew=160
+ %approximation ew=160
   p1 = 177.19
   p2 = -423.16
   p3 = 397.94
@@ -67,7 +67,7 @@ function program_inz
   x160=linspace(0.45,0.71,1e1);
   ww160x=f1(x160) 
   
- %aproksymacja ew=120
+ %approximation ew=120
   p1 = 266.79
   p2 = -503.92
   p3 = 373.94
@@ -81,7 +81,7 @@ function program_inz
   x120=linspace(0.39,0.61,1e1);
   ww120x=f1(x120)
   
- %aproksymacja ew=80
+ %approximation ew=80
   x80=linspace(0.32,0.46,1e1);
   p1 = 736.29;
   p2 = -1079.6;
@@ -101,16 +101,16 @@ function program_inz
   grid on
   plot(t,x(:,1))
   xlabel('t [s]')
-  ylabel('\phi - k¹t przechy³u [rad]')
-  title('Zale¿noœæ k¹ta przechy³u od czasu t dla Ew=240 tm i \omega/\omega_o=0.92')
+  ylabel('\phi - heel angle [rad]')
+  title('Dependence of the heel angle on time t for Ew = 240 tm and \omega/\omega_o=0.92')
   
   figure(2)
   hold on
   grid on
   plot(x(:,1),x(:,2))
-  xlabel('\phi - k¹t przechy³u [rad]')
-  ylabel('d\phi - prêdkoœæ [rad/s]')
-  title('Wykres q i dq po czasie t=500 s dla Ew=240 tm i \omega/\omega_o=0.92')
+  xlabel('\phi - heel angle [rad]')
+  ylabel('d\phi - velocity [rad/s]')
+  title('Graph of q and dq over time t = 500 s for Ew = 240 tm and \omega/\omega_o=0.92')
   
   figure(3)
   hold on
@@ -129,7 +129,7 @@ function program_inz
   plot(ww200x,x200,'x')
   xlabel('\omega/\omega_o')
   ylabel('a [rad]')
-  title('Krzywa rezonansowa ko³ysañ bocznych statku dla rosn¹cych amplitud momentu przechylaj¹cego')
+  title('Resonance curve for increasing heeling moment amplitudes')
   legend('Ew = 240 tm','Ew = 200 tm','Ew = 160 tm','Ew = 120 tm','Ew = 80 tm','Ew = 40 tm', 'maks. amplituda') 
 
   figure(4)
@@ -137,9 +137,9 @@ function program_inz
   grid on
   plot(ew,maxamp,'k')
   plot(ew,maxamp,'o')
-  xlabel('Ew - amplituda momentu przechylaj¹cego [tn]')
-  ylabel('a - amplituda [rad]')
-  title('Maksymalne wartoœci amplitud ko³ysañ bocznych')
+  xlabel('Ew - heeling moment amplitude [tn]')
+  ylabel('a - amplitude [rad]')
+  title('Maximum values of the amplitudes')
   
   
   disp(a);
